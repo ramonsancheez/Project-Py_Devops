@@ -1,6 +1,6 @@
 from src.main import isInsideDB
-from pytest
+import pytest
 
 @pytest.mark.isInsideDB
-def test_isInsideTitle:
-    assert 
+def isInsideDB():
+    assert isInsideDB("Title") == False
