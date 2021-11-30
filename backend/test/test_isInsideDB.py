@@ -1,6 +1,6 @@
-from src.main import isInsideDB
+from src.accesoDatos.conexionBasedatos import connectionBBDD
 import pytest
 
-@pytest.mark.isInsideDB
+@pytest.mark.connectionBBDD
 def isInsideDB():
     assert isInsideDB("Title") == False
