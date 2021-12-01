@@ -1,61 +1,30 @@
-import sys
-sys.path.append(".")
-from backend.src.accesoDatos.conexionBasedatos import lista
-
-def titulo(d):
-    numHastags = 2
-    hastags = "#" * numHastags
-    titulo = d["titulo"]
-    f = open(titulo + ".md", "w")
-    f.write(hastags + " " + titulo + "\n")
+def bucle(diccionario):
+    f = open("./archivosMarkdown/" + diccionario["titulo"] + ".md", "w", encoding="utf-8")
+    for key in diccionario:
+        valor = diccionario[key]
+        if key == "_id": 
+            continue
+        
+        # if key == "titulo": 
+        #     f.write("# ")
+        # if key == "price": 
+        #     f.write("El precio es: ")
+        # if key == "category":
+        #     f.write("Categoria: **")
+        # if key == "stock":
+        #     f.write("Sólo quedan: ")
+        f.write(str(valor))
+        # if key == "stock":
+        #     f.write(" unidades")
+        # if key == "category":
+        #     f.write("**")
+        # if key == "price": 
+        #     f.write("€")
+        # f.write("\n" + "\n")
     f.close()
 
-def descriptionMenu(d):
-    descriptionMenu = d["descriptionMenu"]
-    f = open(d["titulo"] + ".md", "a")
-    f.write(descriptionMenu + " " + "\n")
-    f.close()
-
-def stock(d):
-    stock = d["stock"]
-    f = open(d["titulo"] + ".md", "a")
-    f.write(stock + " " + "\n")
-    f.close()
-
-def precio(d):
-    precio = d["precio"]
-    f = open(d["titulo"] + ".md", "a")
-    f.write(precio + " " + "\n")
-    f.close()
-
-def ingredientes(d):
-    ingredientes = d["ingredientes"]
-    f = open(d["titulo"] + ".md", "a")
-    f.write(ingredientes + " " + "\n")
-    f.close()
-
-def category(d):
-    category = d["category"]
-    f = open(d["titulo"] + ".md", "a")
-    f.write(category + " " + "\n")
-    f.close()
-
-def state(d):
-    state = d["state"]
-    f = open(d["titulo"] + ".md", "a")
-    f.write(state + " " + "\n")
-    f.close()
-
-def markdown(listaDiccionario):
+def markdown(diccionarioDiccionario):
     i = 0
-    while i < len(listaDiccionario):
-        titulo(listaDiccionario[i])
-        descriptionMenu(listaDiccionario[i])
-        stock(listaDiccionario[i])
-        precio(listaDiccionario[i])
-        ingredientes(listaDiccionario[i])
-        category(listaDiccionario[i])
-        state(listaDiccionario[i])
+    while i < len(diccionarioDiccionario):
+        bucle(diccionarioDiccionario[i])
         i += 1
-
-markdown(lista)
