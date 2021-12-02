@@ -10,5 +10,5 @@ def ingredientsList(diccionario):
                         ingredientesLista += lowerIngredient + "."
                     else:
                         ingredientesLista += lowerIngredient + ", "
-    return ingredientesLista 
+    return ingredientesLista
             
