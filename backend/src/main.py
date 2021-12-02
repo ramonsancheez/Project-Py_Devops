@@ -1,5 +1,5 @@
 from accesoDatos.conexionBasedatos import connectionBBDD
-from convertirMarkdown.convertirMarkdown import markdown
+from logica.convertirMarkdown.convertirMarkdown import markdown
 
 def principal():
     

@@ -21,8 +21,6 @@ def bucle(diccionario):
             continue
         if key == "stock":
             string += "Stock disponible: " + str(valor) + " unidades"
-            
-        
         f.write(string + "\n" + "\n")
     f.close()
 
