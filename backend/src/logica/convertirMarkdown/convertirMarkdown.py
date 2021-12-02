@@ -1,7 +1,7 @@
-from convertirMarkdown.ingredientsList import ingredientsList
+from accesoDatos.listaDiccionarios import selector_Datos
+from .ingredientsList import ingredientsList
 
-def bucle(diccionario):
-    f = open("./archivosMarkdown/" + diccionario["titulo"] + ".md", "w", encoding="utf-8")
+def bucle(diccionario, archivo):
     for key in diccionario:
         string = ""
         valor = diccionario[key]
@@ -17,17 +17,18 @@ def bucle(diccionario):
             string += "La categoria es: " + "**" + str(valor) + "**"
         if key == "ingredients":
             lista = ingredientsList(diccionario)
-            f.write(lista + "\n" + "\n")
+            archivo.write(lista + "\n" + "\n")
             continue
         if key == "stock":
             string += "Stock disponible: " + str(valor) + " unidades"
-        f.write(string + "\n" + "\n")
-    f.close()
+        archivo.write(string + "\n" + "\n")
 
-def markdown(diccionarioDiccionario):
+def markdown(baseDatos, categoria):
+    listaDiccionarios = selector_Datos(baseDatos, categoria)
     i = 0
-    while i < len(diccionarioDiccionario):
-        bucle(diccionarioDiccionario[i])
+
+    file = open("./archivosMarkdown/" + categoria + ".md", "w", encoding="utf-8")
+    while i < len(listaDiccionarios):
+        bucle(listaDiccionarios[i], file)
         i += 1
-        if i == len(diccionarioDiccionario)-1:
-            return diccionarioDiccionario[i]
+    file.close()
