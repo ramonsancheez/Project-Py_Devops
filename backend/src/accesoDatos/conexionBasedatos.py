@@ -12,7 +12,7 @@ try:
     for i in items:
         lista.append(i)
 except errors.OperationFailure:
-    print("No se puedo realizar la conexión con la base de datos")
+    print("No se puede realizar la conexión con la base de datos")
 else:
     print("La conexión con la base de datos fue un éxito")
     assert isinstance(lista, list)

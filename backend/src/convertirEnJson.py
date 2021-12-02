@@ -6,18 +6,18 @@ from conexionBasedatos import lista
 datosDict = dict(lista)
 print (datosDict)
 
-def convertirEnJson(datosDict, ):
+# def convertirEnJson(datosDict, ):
 
-    with open('personal.json', 'w') as json_file:
-        json.dump(datosDict, json_file, indent=4)
+#     with open('personal.json', 'w') as json_file:
+#         json.dump(datosDict, json_file, indent=4)
 
-# "json.dumps" convierte el objeto python en una string de json, 
-# para que podamos operar con esa string y llevar a cabo la conversión.
+# # "json.dumps" convierte el objeto python en una string de json, 
+# # para que podamos operar con esa string y llevar a cabo la conversión.
 
 
-    with open('data.json', 'w') as fp:
-        json.dump(dict, fp,  indent=4)
-    print 
+#     with open('data.json', 'w') as fp:
+#         json.dump(dict, fp,  indent=4)
+#     print 
 #como argumento le pasamos el diccionario python
 # datosJson = json.dumps(datosDict)
 # print (datosJson)
