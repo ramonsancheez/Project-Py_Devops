@@ -1,4 +1,6 @@
-## Humo de Plutón
+
+
+# Humo de Plutón
 
 Menú húmedo que te sacia sin necesidad de alimentos procedentes de animales
 
@@ -12,7 +14,9 @@ La categoria es: **Comida Vegana Intergaláctica**
 
 
 
-## Green Meat
+
+
+# Green Meat
 
 Oro es, plata no es. Será carne?
 
@@ -26,7 +30,9 @@ La categoria es: **Comida Vegana Intergaláctica**
 
 
 
-## Patata de Quidy 
+
+
+# Patata de Quidy 
 
 La patata más grande y deliciosa intergaláctica
 
@@ -40,7 +46,9 @@ La categoria es: **Comida Vegana Intergaláctica**
 
 
 
-## Pizza Vegana
+
+
+# Pizza Vegana
 
 Un poquito de Italia a todo el universo
 
@@ -54,7 +62,9 @@ La categoria es: **Comida Vegana Intergaláctica**
 
 
 
-## Hamburguesa Vegana
+
+
+# Hamburguesa Vegana
 
 Hamburguesa que contiene lo más verde de todos los universos
 
@@ -68,7 +78,9 @@ La categoria es: **Comida Vegana Intergaláctica**
 
 
 
-## Helado de Zanahoria
+
+
+# Helado de Zanahoria
 
 Procedente del planeta más helado de las galaxias
 
@@ -82,7 +94,9 @@ La categoria es: **Comida Vegana Intergaláctica**
 
 
 
-## Sushi Andromedáno
+
+
+# Sushi Andromedáno
 
 Sushi con alga de Andrómeda
 
@@ -96,7 +110,9 @@ La categoria es: **Comida Vegana Intergaláctica**
 
 
 
-## Oro Endiamantado
+
+
+# Oro Endiamantado
 
 Si te sobra, escoge lo más caro del menú
 
@@ -110,7 +126,9 @@ La categoria es: **Comida Vegana Intergaláctica**
 
 
 
-## Huevos Fritos de no Gallina
+
+
+# Huevos Fritos de no Gallina
 
 Qué fue antes? El huevo o la gallina? Descúbrelo
 
