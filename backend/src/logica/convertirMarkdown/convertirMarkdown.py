@@ -21,6 +21,9 @@ def escritorMarkdown(diccionario, archivo):
             string += "Stock disponible: " + str(valor) + " unidades"
         archivo.write(string + "\n" + "\n")
 
+
+
+        
 def creadorMarkdown(baseDatos, categoria):
     listaDiccionarios = selector_Datos(baseDatos, categoria)
     i = 0
