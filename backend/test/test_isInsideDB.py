@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from src.main import isInsideDB
 <<<<<<< HEAD
 from pytest
@@ -6,9 +7,12 @@ from pytest
 def test_isInsideTitle:
     assert 
 =======
+=======
+from src.accesoDatos.conexionBasedatos import connectionBBDD
+>>>>>>> Ramon-features
 import pytest
 
-@pytest.mark.isInsideDB
+@pytest.mark.connectionBBDD
 def isInsideDB():
     assert isInsideDB("Title") == False
 >>>>>>> origin/Ramon-features
