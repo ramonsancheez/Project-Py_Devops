@@ -1,4 +1,6 @@
-## Sugar Stars
+
+
+# Sugar Stars
 
 Las sabrosuras más ricas de la constelación estelar
 
@@ -12,7 +14,9 @@ La categoria es: **Comida Baby Yoda**
 
 
 
-## Klisko
+
+
+# Klisko
 
 Super batido vitamínico de todos los monstruos del planeta Gargar
 
@@ -26,7 +30,9 @@ La categoria es: **Comida Baby Yoda**
 
 
 
-## Laisar
+
+
+# Laisar
 
 Baila al ritmo de los espamos que provoca este menú infantil.
 
@@ -40,7 +46,9 @@ La categoria es: **Comida Baby Yoda**
 
 
 
-## Risily
+
+
+# Risily
 
 La clásica sopa de las galaxias, sabrosa en 4 dimensiones
 
@@ -54,7 +62,9 @@ La categoria es: **Comida Baby Yoda**
 
 
 
-## Solarico
+
+
+# Solarico
 
 El super boost de vitamina D que necesita tu criatura espacial
 
@@ -68,7 +78,9 @@ La categoria es: **Comida Baby Yoda**
 
 
 
-## Crispyritios
+
+
+# Crispyritios
 
 Deliciosos meteoritos marinados en salsa de venus y fritios en el núcleo solar
 
@@ -82,7 +94,9 @@ La categoria es: **Comida Baby Yoda**
 
 
 
-## Galaxy Colorsboom
+
+
+# Galaxy Colorsboom
 
 Galaxycolors inundará tu boca lleno de colores ricos
 
@@ -96,7 +110,9 @@ La categoria es: **Comida Baby Yoda**
 
 
 
-## Osilar
+
+
+# Osilar
 
 Desde el planeta dragón descubre el plato con fuego negro y chispas estelares
 
@@ -110,7 +126,9 @@ La categoria es: **Comida Baby Yoda**
 
 
 
-## Origys
+
+
+# Origys
 
 Este menú trasladará a tu chiquitín alíen a otras galaxias
 
