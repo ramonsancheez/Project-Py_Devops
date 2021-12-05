@@ -19,8 +19,8 @@ def escritorMarkdown(diccionario, archivo):
             archivo.write(lista + "\n" + "\n")
             continue
         if key == "state":
-            lista = stateCaracteristicas(diccionario)
-            archivo.write(lista)
+            state = stateCaracteristicas(diccionario)
+            archivo.write(state)
             continue
         if key == "stock":
             string += "Stock disponible: " + str(valor) + " unidades"
