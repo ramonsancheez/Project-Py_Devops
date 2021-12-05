@@ -1,9 +1,14 @@
 def stateCaracteristicas(diccionario):
     caracteristicasEspeciales = "**Las características especiales del menú son:** \n"
-    valor = diccionario['state']
-    for caracteristica in valor:
-        if caracteristica == valor[0]:
-            caracteristicasEspeciales + "- " + caracteristica + "\n"  
-        else: 
-            "- " + caracteristica + "\n"
-        return stateCaracteristicas
+    diccionarioState = diccionario['state']
+    valores = diccionarioState.values()
+    valoresLista = list(valores)
+    keys = diccionarioState.keys()
+    for key in keys:
+        capKeys = key.capitalize()
+        caracteristicasEspeciales += "- " + capKeys + ": "
+        for valor in valoresLista:
+            caracteristicasEspeciales += str(valor) + "\n"
+            valoresLista.remove(valor)
+            break
+    return caracteristicasEspeciales
