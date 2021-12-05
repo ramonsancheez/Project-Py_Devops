@@ -1,5 +1,6 @@
 from accesoDatos.listaDiccionarios import selector_Datos
 from .ingredientsList import ingredientsList
+from .stateCaracteristicas import stateCaracteristicas  
 
 def escritorMarkdown(diccionario, archivo):
     for key in diccionario:
@@ -16,6 +17,10 @@ def escritorMarkdown(diccionario, archivo):
         if key == "ingredients":
             lista = ingredientsList(diccionario)
             archivo.write(lista + "\n" + "\n")
+            continue
+        if key == "state":
+            lista = stateCaracteristicas(diccionario)
+            archivo.write(lista)
             continue
         if key == "stock":
             string += "Stock disponible: " + str(valor) + " unidades"
