@@ -15,7 +15,7 @@ def conectarHugo(archivos):
     
 #Establecemos la ruta de origen y destino en variables para manejar mejor el código
     rutaOrigen ='/Users/leslieross/Documentos/DAW dual/programacion/1r trimestre/Project-Py_Devops/Project-Py_Devops/archivosMarkdown'
-    rutaDestino ='/Users/leslieross/Documentos/DAW dual/programacion/1r trimestre/Project-Py_Devops/Project-Py_Devops/webProyecto/content/posts'
+    rutaDestino ='/Users/leslieross/Documentos/DAW dual/programacion/1r trimestre/Project-Py_Devops/Project-Py_Devops/webProyecto/content'
 
 #Creamos una lista de los archivos que con contiene la carpeta origen 
 # en forma de variable
