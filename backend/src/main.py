@@ -1,14 +1,15 @@
 from accesoDatos.conexionBasedatos import connectionBBDD
-from logica.convertirMarkdown.convertirMarkdown import markdown
+from logica.convertirMarkdown.convertirMarkdown import creadorMarkdown
+from logica.conectarHugo.conectarHugo import conectarHugo 
 from os import system
 system('cls')
 
 def principal():
     
     baseDatos = connectionBBDD()
-    markdown(baseDatos, "Comida Chatarra")
-    markdown(baseDatos, "Comida Vegana Intergaláctica")
-    markdown(baseDatos, "Comida Baby Yoda")
-
+    creadorMarkdown(baseDatos, "Comida Chatarra")
+    creadorMarkdown(baseDatos, "Comida Vegana Intergaláctica")
+    creadorMarkdown(baseDatos, "Comida Baby Yoda")
+    conectarHugo()
 
 principal()

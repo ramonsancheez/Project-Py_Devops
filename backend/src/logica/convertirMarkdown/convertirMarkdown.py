@@ -1,12 +1,11 @@
 from accesoDatos.listaDiccionarios import selector_Datos
 from .ingredientsList import ingredientsList
+from .stateCaracteristicas import stateCaracteristicas  
 
-def bucle(diccionario, archivo):
+def escritorMarkdown(diccionario, archivo):
     for key in diccionario:
         string = ""
         valor = diccionario[key]
-        if key == "_id": 
-            continue
         if key == "titulo": 
             string += "# " + str(valor)
         if key == "descriptionMenu":
@@ -19,16 +18,22 @@ def bucle(diccionario, archivo):
             lista = ingredientsList(diccionario)
             archivo.write(lista + "\n" + "\n")
             continue
+        if key == "state":
+            state = stateCaracteristicas(diccionario)
+            archivo.write(state)
+            continue
         if key == "stock":
             string += "Stock disponible: " + str(valor) + " unidades"
         archivo.write(string + "\n" + "\n")
 
-def markdown(baseDatos, categoria):
+
+
+        
+def creadorMarkdown(baseDatos, categoria):
     listaDiccionarios = selector_Datos(baseDatos, categoria)
     i = 0
-
     file = open("./archivosMarkdown/" + categoria + ".md", "w", encoding="utf-8")
     while i < len(listaDiccionarios):
-        bucle(listaDiccionarios[i], file)
+        escritorMarkdown(listaDiccionarios[i], file)
         i += 1
     file.close()

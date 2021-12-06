@@ -2,7 +2,7 @@ import pymongo
 
 def selector_Datos(baseDatos, categoria):
     coleccion = baseDatos.menus_with_schema
-    documentos = coleccion.find({"category":categoria})
+    documentos = coleccion.find({"category":categoria}, {">_id" : False})
 
     try:
         listaDiccionarios = []

@@ -1,0 +1,4 @@
+baseURL = 'http://example.org/'
+languageCode = 'es'
+title = 'Web del proyecto'
+theme = "omega"
