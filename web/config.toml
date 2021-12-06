@@ -1,0 +1,18 @@
+baseURL = 'http://example.org/'
+languageCode = 'es'
+title = 'web'
+theme = 'tale-hugo'
+
+[menu]
+  [[menu.main]]
+	identifier = "Contacto"
+	name = "Contacto"
+	title = "Contacto"
+	url = "/contacto/"
+	weight = 5
+  [[menu.main]]
+	identifier = "posts"
+	name = "Posts"
+	title = "Posts"
+	url = "/Posts/"
+	weight = 5
