@@ -10,5 +10,5 @@ def connectionBBDD():
         print("No pudo realizarse la conexion con la base de datos")
         exit()
     else:
-        print("La conexión con la base de datos se realizó correctamente")
+        print("La conexión con la base de datos se realizó correctamente \n")
         return baseDatos
