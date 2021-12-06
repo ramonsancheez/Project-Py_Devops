@@ -7,15 +7,16 @@ import os
 # colecciones de archivos. Ej: copiar, mover, eliminar...
 import shutil
 
-#Para saber el contenido del directorio del que vamos a copiar
-contenido = "Este es el contenido que hay en la carpeta: \n" +  str(os.listdir('/Users/leslieross/Documentos/DAW dual/programacion/1r trimestre/Project-Py_Devops/Project-Py_Devops/archivosMarkdown'))
+# Para saber el contenido del directorio del que vamos a copiar
+contenido = "Este es el contenido que hay en la carpeta: \n" +  str(os.listdir(f'{os.getcwd()}/archivosMarkdown/'))
 print(contenido)
+print(os.getcwd())
 
-def conectarHugo(archivos):
+def conectarHugo():
     
 #Establecemos la ruta de origen y destino en variables para manejar mejor el código
-    rutaOrigen ='/Users/leslieross/Documentos/DAW dual/programacion/1r trimestre/Project-Py_Devops/Project-Py_Devops/archivosMarkdown'
-    rutaDestino ='/Users/leslieross/Documentos/DAW dual/programacion/1r trimestre/Project-Py_Devops/Project-Py_Devops/webProyecto/content'
+    rutaOrigen = f'{os.getcwd()}/archivosMarkdown/'
+    rutaDestino =f'{os.getcwd()}/frontend/webProyecto/content/'
 
 #Creamos una lista de los archivos que con contiene la carpeta origen 
 # en forma de variable
