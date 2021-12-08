@@ -7,9 +7,9 @@ system('cls')
 def principal():
     
     baseDatos = connectionBBDD()
-    creadorMarkdown(baseDatos, "Comida Chatarra")
-    creadorMarkdown(baseDatos, "Comida Vegana Intergaláctica")
-    creadorMarkdown(baseDatos, "Comida Baby Yoda")
+    creadorMarkdown(baseDatos, "ComidaChatarra")
+    creadorMarkdown(baseDatos, "ComidaVeganaIntergalactica")
+    creadorMarkdown(baseDatos, "ComidaBabyYoda")
     conectarHugo()
 
 principal()
