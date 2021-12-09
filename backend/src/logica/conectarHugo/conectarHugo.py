@@ -12,8 +12,7 @@ def conectarHugo():
         exit()
     else:
         contenido = "Esta es una lista del contenido que hay en la carpeta archivosMarkdown: \n" +  str(archivosLista)
-        rutaOrigen = f'{os.getcwd()}/archivosMarkdown/'
-        rutaDestino =f'{os.getcwd()}/frontend/webProyecto/content/'
+        rutaDestino =f'{os.getcwd()}/frontend/webComida.com/content/'
         for archivo in archivosLista:
             shutil.copy(os.path.join(rutaOrigen, archivo), rutaDestino)
         print(contenido)
