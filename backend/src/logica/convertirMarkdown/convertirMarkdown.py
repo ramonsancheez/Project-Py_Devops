@@ -1,35 +1,37 @@
 from accesoDatos.listaDiccionarios import selector_Datos
 from .ingredientsList import ingredientsList
 from .stateCaracteristicas import stateCaracteristicas  
+import os
 
-def escritorMarkdown(diccionario, archivo):
-    for key in diccionario:
+
+def escritorMarkdown(documento, archivo):
+    for key in documento:
         string = ""
-        valor = diccionario[key]
-        if key == "titulo": 
-            string += "# " + str(valor)
-        if key == "descriptionMenu":
-            string += str(valor)
-        if key == "price": 
-            string += "El precio es de: " + "**" + str(valor) + "€**"
-        if key == "category":
-            string += "La categoria es: " + "**" + str(valor) + "**"
-        if key == "ingredients":
-            lista = ingredientsList(diccionario)
-            archivo.write(lista + "\n" + "\n")
-            continue
-        if key == "state":
-            state = stateCaracteristicas(diccionario)
-            archivo.write(state)
-            continue
-        if key == "stock":
-            string += "Stock disponible: " + str(valor) + " unidades"
+        valor = documento[key]
+        match key:
+            case "_id":
+                continue
+            case "titulo":
+                string += "# " + str(valor)
+            case "descriptionMenu":
+                string += str(valor)
+            case "stock":
+                string += "Stock disponible: " + str(valor) + " unidades"
+            case "price":
+                 string += "El precio es de: " + "**" + str(valor) + "€**"
+            case "ingredients":
+                string = ingredientsList(documento)
+            case "state":
+                string = stateCaracteristicas(documento)
+            case "category":        
+                string += "La categoria es: " + "**" + str(valor) + "**"
         archivo.write(string + "\n" + "\n")
 
 
 
         
 def creadorMarkdown(baseDatos, categoria):
+    os.makedirs("./archivosMarkdown", exist_ok=True)
     listaDiccionarios = selector_Datos(baseDatos, categoria)
     i = 0
     file = open("./archivosMarkdown/" + categoria + ".md", "w", encoding="utf-8")
