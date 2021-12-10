@@ -1,6 +1,8 @@
 from accesoDatos.listaDiccionarios import selector_Datos
 from .ingredientsList import ingredientsList
 from .stateCaracteristicas import stateCaracteristicas  
+import os
+
 
 def escritorMarkdown(diccionario, archivo):
     for key in diccionario:
@@ -30,6 +32,7 @@ def escritorMarkdown(diccionario, archivo):
 
         
 def creadorMarkdown(baseDatos, categoria):
+    os.makedirs("./archivosMarkdown", exist_ok=True)
     listaDiccionarios = selector_Datos(baseDatos, categoria)
     i = 0
     file = open("./archivosMarkdown/" + categoria + ".md", "w", encoding="utf-8")
