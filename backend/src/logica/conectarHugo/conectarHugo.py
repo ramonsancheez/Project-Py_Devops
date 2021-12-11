@@ -5,7 +5,8 @@ def conectarHugo():
     try:
         rutaOrigen = f'{os.getcwd()}/archivosMarkdown/'
         archivosLista = os.listdir(rutaOrigen)
-        assert archivosLista
+        if len(archivosLista) == 0:
+            raise ValueError
 
     except:
         print("La carpeta archivosMarkdown está vacía, por lo que no se le puede transferir ningún archivo a HUGO")
