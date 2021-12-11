@@ -4,7 +4,7 @@ import certifi
 import pytest
 
 @pytest.mark.selector_Datos
-def test_collectionFull():
+def test_correctCollection():
     cluster = MongoClient("mongodb+srv://m001-student:mongo123@cluster0.qmgmx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", tlsCAFile=certifi.where())
     baseDatos = cluster.proyecto
     coleccion = baseDatos.menus_with_schema

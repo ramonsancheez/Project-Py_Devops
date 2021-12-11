@@ -1,4 +1,5 @@
-def selector_Datos(coleccion, categoria):
+def selector_Datos(baseDatos, categoria):
+    coleccion = baseDatos.menus_with_schema
     documentos = coleccion.find({"category":categoria})
 
     try:
@@ -8,7 +9,7 @@ def selector_Datos(coleccion, categoria):
         if len(listaDiccionarios) == 0:
             raise ValueError 
     except:
-        print("La colección de datos se encuentra vacía")
-        return False
+        print("La colección de datos se encuentra vacía \n")
+        exit()
     else:
-        return True
+        return listaDiccionarios

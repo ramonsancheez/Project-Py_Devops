@@ -1,9 +1,8 @@
-def stateCaracteristicas(documento):
+def stateCaracteristicas(diccionarioState):
     try:
         caracteristicasEspeciales = "**Las características especiales del menú son:** \n"
-        diccionarioState = documento['state']
         if type(diccionarioState) != dict:
-                raise ValueError
+            raise ValueError
         if len(diccionarioState) != 3:
             raise ValueError
         valores = diccionarioState.values()
@@ -17,7 +16,6 @@ def stateCaracteristicas(documento):
                 valoresLista.remove(valor)
                 break
     except:
-        print("Compruebe mejor su pedido, algo ha aido mal")
-        exit()
+        return False
     else:
-        return caracteristicasEspeciales
+        return True
