@@ -18,7 +18,7 @@ def escritorMarkdown(documento, archivo):
             case "stock":
                 string += "Stock disponible: " + str(valor) + " unidades"
             case "price":
-                 string += "El precio es de: " + "**" + str(valor) + "€**"
+                string += "El precio es de: " + "**" + str(valor) + "€**"
             case "ingredients":
                 string = ingredientsList(documento)
             case "state":
