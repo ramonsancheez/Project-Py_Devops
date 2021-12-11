@@ -1,5 +1,5 @@
 from accesoDatos.listaDiccionarios import selector_Datos
-from .ingredientsList import ingredientsList
+from .ingredientsArray import ingredientsList
 from .stateCaracteristicas import stateCaracteristicas  
 import os
 
@@ -26,16 +26,13 @@ def escritorMarkdown(documento, archivo):
             case "category":        
                 string += "La categoria es: " + "**" + str(valor) + "**"
         archivo.write(string + "\n" + "\n")
-
-
-
         
 def creadorMarkdown(baseDatos, categoria):
     os.makedirs("./archivosMarkdown", exist_ok=True)
     listaDiccionarios = selector_Datos(baseDatos, categoria)
     i = 0
-    file = open("./archivosMarkdown/" + categoria + ".md", "w", encoding="utf-8")
+    archivo = open("./archivosMarkdown/" + categoria + ".md", "w", encoding="utf-8")
     while i < len(listaDiccionarios):
-        escritorMarkdown(listaDiccionarios[i], file)
+        escritorMarkdown(listaDiccionarios[i], archivo)
         i += 1
-    file.close()
+    archivo.close()
