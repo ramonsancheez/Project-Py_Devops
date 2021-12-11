@@ -6,7 +6,7 @@ sys.path.append(".")
 def abrirHugo():
     os.chdir('./frontend/webComida.com')
     print("estoy en la carpera deseada")    
-    url = "http://localhost:1313/"
-    webbrowser.open_new(url)
+    hugoUrl = "http://localhost:1313/"
+    webbrowser.open_new(hugoUrl)
     os.system("hugo server")
 

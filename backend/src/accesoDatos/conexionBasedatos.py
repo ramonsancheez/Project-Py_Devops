@@ -1,10 +1,10 @@
 from pymongo import MongoClient
 import certifi
 
-def connectionBBDD(url):
+def connectionBBDD(bbddUrl):
     
     try:
-        cluster = MongoClient(url, tlsCAFile=certifi.where())
+        cluster = MongoClient(bbddUrl, tlsCAFile=certifi.where())
         baseDatos = cluster.proyecto
         "menus_with_schema" in baseDatos.list_collection_names()
     except:

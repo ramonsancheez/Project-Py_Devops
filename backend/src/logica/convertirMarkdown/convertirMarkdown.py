@@ -1,8 +1,7 @@
-from accesoDatos.listaDiccionarios import selector_Datos
+from accesoDatos.selectorDatos import selector_Datos
 from .ingredientsArray import ingredientsList
 from .stateCaracteristicas import stateCaracteristicas  
 import os
-
 
 def escritorMarkdown(documento, archivo):
     for key in documento:
