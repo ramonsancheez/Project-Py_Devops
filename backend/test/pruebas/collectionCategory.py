@@ -5,7 +5,8 @@ def selector_Datos(coleccion, categoria):
         listaDiccionarios = []
         for documento in documentos:
             listaDiccionarios.append(documento)
-        assert listaDiccionarios 
+        if len(listaDiccionarios) == 0:
+            raise ValueError 
     except:
         print("La colección de datos se encuentra vacía")
         return False
