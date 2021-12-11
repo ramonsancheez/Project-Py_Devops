@@ -1,7 +1,7 @@
 # **PROYECTO PYDEVOPS**
 #### ***Ramón Sánchez & Leslie Aranibar***  *1r DAW DUAL* 
 -------
-$Índice:$
+***Índice:***
 
 1. Introducción
    * Descripción del reto
@@ -24,15 +24,14 @@ $Índice:$
 ---
 ## **1. Introducción**
 
-- $Descripción$ $del$ $Reto:$
-  
+**- Descripción del Reto:**  
 El desafío que mi equipo abordó resolutivamente, en esencia, consiste en la refactorización de la web interna de una empresa determinada. La cuál era hecha con Wordpress y presentaba ciertas flaquezas. Sobretodo en los procesos de CRUD en su stock.
 
 De manera que nosotros debemos de encargarnos de implementar un sistema de integración y entrega contínua (CI/CD) y mejorar, tanto el funcionamiento y la estética, de su web interna. Todo eso haciendo uso de los conocimientos adquiridos de Python, CSS y de BBDD.
 
 Por suerte, el último becario pasó los ítems a documentos JSON. Y gracias a él, este es el punto de partida del trabajo de nuestro equipo.
 
-- $Análisis$ $de$ $los$ $objetivos:$
+**- Análisis de los objetivos:**
 
 Los objetivos clave de este proyecto son:
 
@@ -50,11 +49,11 @@ A continuación ejecutaremos nuestro programa para demostrar que cumple con todo
 ---
 ## **3. Descripción técnica**
 
-  * $Arquitectura$ $de$ $la$ $applicación$ $por$ $capas:$ 
-  
+* **Arquitectura de la applicación por capas:**  
+
 ![arquitecturaCapas](./srcReadme/arquitecturaCapas.png)
 
-   * $Tecnologías$ $utilizadas:$
+* **Tecnologías utilizadas:**
 
 Para desarrollar el proyecto nosotros hemos hecho uso de las siguientes herramientas:
 |      Herramientas     |                         Funcionalidad                         |
@@ -73,21 +72,48 @@ Para desarrollar el proyecto nosotros hemos hecho uso de las siguientes herramie
 | Python                | lenguaje de programación                                      |
 | Mongo Atlas           | servicio global de base de datos de documentos en la nube     |
 | Google Formularios    | para hacer formularios                                        |
-| Discord               | conectarnos y hacer dailys                                    |
+| Discord y Whastapp              | conectarnos y hacer dailys                                    |
 
 
-   * $Diagrama$ $de$ $compontes$ $y$ $sus$ $funcionalidades:$
+*   **Diagrama de compontes y sus funcionalidades:**
 
 ---
  ## **4. Metodología de desarrollo utilizada**
+La metodología de desarrollo que hemos seleccionado conjuntamente es la SCRUM. Porque nos desenvolvemos bien dentro de este marco de proceso ligero y ágil. 
+
+Este modelo intenta construir un mejor enfoque para manejar el desarrollo de software. Tiene una menos documentación que los otros métodos tradicionales y esto hace que sea menos complicado. Consta de un programa corto y fijo por ciclos con alcance ajustable, llamados sprints. Y cuenta con eventos, hitos y reuniones que se repiten.
+
+El *Product owner* es David (tutor), el rol del *Scrum Master* nos lo hemos ido relevando, de un sprint a otro. Y el*Scrum team* somos nosotros: Ramón y Leslie.
+
+Y para la organización del trabajo y potenciar nuestra productividad hemos utilizado la herramienta *Notion*. Gracias a esta herramienta hemos definido todo el backlog junto con sus historias de usuario correspondientes. Además hemos organizado el desarrollo del trabajo en 5 sprints con objetivos específicos, mesurables, alcanzables, relevantes y temporales, de acuerdo con el principio *SMART*. 
+Por  otra parte, con la finalidad de llevar un ritmo de trabajo sincronizado, contamos con un calendario compartido dónde se visualiza la vida temporal de los *Epics* y algunas fechas destacables (como los *Sprint review meeting, Scrum retrospective meeting, etc.*)
+
+Una pestaña que nos fué muy útil es la de *Task by Status*, la cual nos permitía ver el estado de las tareas de los sprints. Dividimos las tareas en 4  columnas: 
+*  *Not started*: tareas por hacer
+*  *In progress*: tareas que se estan haciendo.
+*  *Completed*: tareas finalizadas
+*  *Bugs:* tareas que tienen problemas o errores que hay que arreglar
+
+De esta manera, la comunicación entre nosotros ha sido múy ágil, entendible y fluída. Y la diferencia horaria de trabajo que cada uno tiene no supuso ningún problema.
+
+A continuación os mostraremos el 
+[Notion del proyecto](https://efficient-governor-1bf.notion.site/dfb1bb2e4d4344e0979f03268fdf8333?v=8160853a846449f9add5f290d6cdfbd5)
+
 ---
 ## **5. Clockify del desarrollo de la app**
-* $Diagrama$ $del$ $trabajo$ $hecho:$
-* $Análisis$ $y$ $justificación$ $del$ $tiempo$ $invertido:$
+* *Diagrama del trabajo hecho:*
+* *Análisis y justificación del tiempo invertido*:
 ---
 ## **6. Conclusiones**
-* $Principales$ $dificultades$ $encontradas:$
-* $Posibles$ $mejoras:$
+* *Principales dificultades encontradas:*
+  
+Las principales dificultades que nos hemos encontrado fue familiarizarnos y trabajar con la estrategia de Git Flow y funcioanlidades de Git ya que tuvimos conflictos de ramas.
+Otro factor a tener en cuenta es el tiempo ajustado que hemos dispuesto, la integación de nuevas funcionalidades sorpresas (los formularios) y la integración/planteamiento de casos tests en el código.
+
+* *Posibles mejoras:*
+
+Leer más libros sobre buenas prácticas en programación, como *The code complete o Clean Arquitecture*, nos leímos una parte y parece interesante. También aprender más sobre estrategias de *Git flow*. Y leer más el libro de Python y practicar.  
+
 ---
 ## **7.Turno de preguntas**
 ![ask me](./srcReadme/askMe.png)
