@@ -68,9 +68,6 @@ Para desarrollar el proyecto nosotros hemos hecho uso de las siguientes herramie
 | Git Graphs            | permite ver el historial y el esquema de las ramas de trabajo |
 | Live Share            | codificar conjuntamente                                       |
 | Black                 | corrector de la sintaxis de programación                      |
-| Bandit                |                                                               |
-| Tox                   |                                                               |
-| Covarege              |                                                               |
 | Hugo                  | gestor de sitios estáticos                                    |
 | Python                | lenguaje de programación                                      |
 | Mongo Atlas           | servicio global de base de datos de documentos en la nube     |
