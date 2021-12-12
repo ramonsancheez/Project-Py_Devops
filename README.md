@@ -8,7 +8,7 @@
    * Análisis de los objetivos   
 2. Demostración del funcionamiento del proyecto
 3. Descripción técnica
-    * Arquitectura de la applicación por capas (de momento¿?)
+    * Arquitectura de la applicación (de momento¿?)
     * Tecnologías utilizadas 
     * Diagrama de compontes y sus funcionalidades
     * Diagrama E/R de la base de datos (o el que proceda).??????????¿¿¿¿¿¿¿
@@ -49,8 +49,11 @@ A continuación ejecutaremos nuestro programa para demostrar que cumple con todo
 ---
 ## **3. Descripción técnica**
 
-* **Arquitectura de la applicación por capas:**  
+* **Arquitectura de la applicación:** 
 
+La arquitectura del sistema de nuestra aplicación es modular. Cada módulo es independiente de los demás, de manera que presenta la lógica un bajo acoplamiento. Pero se encuentran todos conectados en el main.py y son ejecutados a la vez. 
+
+Nuestras barricados las encontramos en los módulos dónde hemos utlizado las siguientes librerías: *Pymongo, Os, Shutill, Webbrowser y Certifi.* Ya que por algún error que se presente en ellas impedirá la ejecución de dichos módulos.
 ![arquitecturaCapas](./srcReadme/arquitecturaCapas.png)
 
 * **Tecnologías utilizadas:**
@@ -77,6 +80,20 @@ Para desarrollar el proyecto nosotros hemos hecho uso de las siguientes herramie
 
 *   **Diagrama de compontes y sus funcionalidades:**
 
+Nuestro diagrama de componentes consta de los siguientes módulos :
+
+|          Módulo         |                                                                                                                              Proposito                                                                                                                              |
+|:-----------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Main.py                 | recoge y ejecuta todos los otros módulos, por lo tanto depende de los demás                                                                                                                                                                                         |
+| conexionBasedatos.py    | conecta con la base de datos almacenada en MongoAtlas y depende de este mismo.                                                                                                                                                                                      |
+| listaDiccionario.py     | transforma la colección de los ítems en una lista python para su posterior manipulación. Depende del módulo anterior.                                                                                                                                               |
+| selectorDatos.py        | localiza y classifica los menús por las 3 categorias que existen.                                                                                                                                                                                                   |
+| convertirMarkdown.py    | recoge                                                                                                                                                                                                                                                              |
+| ingredientsArray.py     |                                                                                                                                                                                                                                                                     |
+| stateCaracteristicas.py |                                                                                                                                                                                                                                                                     |
+| conectarHugo.py         | traslada los archivos que se encuentran en la carpeta origen a la ruta destino deseada. En este caso es en el Post>Content>webComida.com, para que el gestor  de sitios estáticos lo publique. Depende de los archivos Markdown convertidos creados por ese módulo. |
+| abrirHugo.py            | se posiciona dentro de la web con Hugo. Luego abre una ventana en el navegador  predeterminado de cada ordenador y ejecuta en la terminal el comando para ver la web.                                                                                               |
+                                             
 ---
  ## **4. Metodología de desarrollo utilizada**
 La metodología de desarrollo que hemos seleccionado conjuntamente es la SCRUM. Porque nos desenvolvemos bien dentro de este marco de proceso ligero y ágil. 
