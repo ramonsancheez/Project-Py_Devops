@@ -5,7 +5,7 @@ from logica.abrirHugo.abrirHugo import abrirHugo
 from os import system
 system("cls")
 
-
+# Funcion principal que llama a las otras
 def principal():
     
     bbddurl = "mongodb+srv://m001-student:mongo123@cluster0.qmgmx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"

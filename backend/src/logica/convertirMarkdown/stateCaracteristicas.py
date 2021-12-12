@@ -1,3 +1,5 @@
+
+# Función que pasa el diccionario de state a un único string
 def stateCaracteristicas(documento):
     try:
         caracteristicasEspeciales = "**Las características especiales del menú son:** \n"
