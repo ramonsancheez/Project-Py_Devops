@@ -12,7 +12,7 @@ def transferirMarkdown():
         exit()
     else:
         contenido = "Esta es una lista del contenido que hay en la carpeta archivosMarkdown: \n" +  str(archivosLista)
-        rutaDestino =f'{os.getcwd()}/frontend/webComida.com/content/'
+        rutaDestino =f'{os.getcwd()}/frontend/webComida.com/content/posts'
         for archivo in archivosLista:
             shutil.copy(os.path.join(rutaOrigen, archivo), rutaDestino)
         print(contenido)
