@@ -1,3 +1,5 @@
+
+# Función que pasa el array de ingredients a un único string
 def ingredientsList(documento):
     try:
         valor = documento['ingredients']

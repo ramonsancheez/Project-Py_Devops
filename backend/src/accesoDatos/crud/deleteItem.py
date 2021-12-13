@@ -7,7 +7,7 @@ def deleteItem():
         baseDatos = cluster.proyecto
         coleccion = baseDatos.menus_with_schema
 
-        deletedItem = { "name": "John", "address": "Highway 37" }
+        deletedItem = { "titulo": "Pizza Vegana", "descriptionMenu": "Un poquito de Italia a todo el universo", "stock": 70, "price":40.99, "ingredients":["Masa de Milán", "Tomate de Ourense", "Queso de no oveja"], "category":"ComidaVeganaIntergalactica"}
         respuesta = input(f"Va a eliminar {deletedItem} de la base de datos, si desea cambiar los datos, hágalo en el editor de texto. ¿Desea eliminar ese ítem? (S/N): ")
         respuesta.lower()
         if respuesta == "s":
