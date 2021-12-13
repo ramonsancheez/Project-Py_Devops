@@ -11,8 +11,6 @@
     * Arquitectura de la applicación
     * Tecnologías utilizadas 
     * Diagrama de compontes y sus funcionalidades
-    * Diagrama E/R de la base de datos (o el que proceda).??????????¿¿¿¿¿¿¿
-    * Fichero XML y Schema ???¿¿¿¿ (donde saco el XMML)
 4. Metodología de desarrollo utilizada
 5. Clockify del desarrollo de la app (esto lo haré  al final porque seguimos inputando)
    * Diagrama del trabajo hecho
@@ -118,7 +116,7 @@ A continuación os mostraremos el
 ---
 ## **5. Clockify del desarrollo de la app**
 * *Diagrama del trabajo hecho:*
-  [Clockify Report del proyecto](https://github.com/ramonsancheez/Project-Py_Devops/blob/Leslie-features2/srcReadme/Clockify_Time_Report_Summary.pdf)
+  [Clockify Report del proyecto](https://github.com/ramonsancheez/Project-Py_Devops/blob/Leslie-features2/srcReadme/Clockify_por_Tags.pdf)
 
 Este es nuestro diagrama de trabajo que hemos hecho con Clockify. Dentro de ese informe podemos ver en primer lugar una diagrama en barras que muestra la horas de trabajo que hemos hecho a lo largo del proyecto.
 
