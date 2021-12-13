@@ -125,7 +125,9 @@ Este es nuestro diagrama de trabajo que hemos hecho con Clockify. Dentro de ese 
 También existe otro diagrama cirular donde se muestra por distintos colores las tareas que hemos realizado. Y por último se ve de manera más detallada, separado por programador, las tareas realizadas. 
 
 * *Análisis y justificación del tiempo invertido*:
-
+* *Diagrama del tiempo:*
+  [Clockify Time del proyecto](https://github.com/ramonsancheez/Project-Py_Devops/blob/Leslie-features2/srcReadme/Clockify_Time_Report_Summary_18_11_2021-13_12_2021.pdf)
+  
 Analizando el tiempo invertido, principalmente podemos destacar que nos hemos acercado a la estimación inicial. Desde un principio, a través de la experiencia que tuvo nuestro mentor de 2n año, sabíamos que alredor de más de 100h le íbamos a dedicar.
 Por eso, decidimos ser precabidos y empezar a trabajar y organizar los sprints desde el primer momento. 
 
