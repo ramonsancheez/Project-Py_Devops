@@ -8,7 +8,7 @@
    * Análisis de los objetivos   
 2. Demostración del funcionamiento del proyecto
 3. Descripción técnica
-    * Arquitectura de la applicación (de momento¿?)
+    * Arquitectura de la applicación
     * Tecnologías utilizadas 
     * Diagrama de compontes y sus funcionalidades
     * Diagrama E/R de la base de datos (o el que proceda).??????????¿¿¿¿¿¿¿
