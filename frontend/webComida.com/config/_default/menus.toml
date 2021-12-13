@@ -1,0 +1,23 @@
+  [[main]]
+  name = "Comida Vegana Intergaláctica"
+  weight = 200
+  identifier = "Comida Vegana Intergaláctica"
+  url = "/posts/ComidaVeganaIntergalactica/"
+
+  [[main]]
+  name = "Comida Chatarra"
+  weight = 300
+  identifier = "Comida Chatarra"
+  url = "/posts/ComidaChatarra/"
+
+  [[main]]
+  name = "Comida Baby Yoda"
+  weight = 300
+  identifier = "Comida Baby Yoda"
+  url = "/posts/ComidaBabyYoda/"
+
+  [[footer]]
+  name = "imprint"
+  weight = 1
+  identifier = "imprint"
+  url = "/imprint/"
