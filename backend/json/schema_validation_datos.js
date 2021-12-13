@@ -39,7 +39,7 @@ db.createCollection("menus", {
           category: {
             bsonType: "string",
             description: "must be a string with category of menu",
-            enum: ["Comida Vegana Intergaláctica", "Comida Baby Yoda", "Comida Chatarra"]
+            enum: ["ComidaVeganaIntergalactica", "ComidaBabyYoda", "ComidaChatarra"]
           },
           state: {
             bsonType: "object",
