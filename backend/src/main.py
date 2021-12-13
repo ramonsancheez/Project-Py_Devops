@@ -1,14 +1,20 @@
 from accesoDatos.conexionBasedatos import connectionBBDD
-from logica.convertirMarkdown.convertirMarkdown import markdown
+from logica.convertirMarkdown.convertirMarkdown import creadorMarkdown
+from logica.transferirMarkdown.conectarHugo import transferirMarkdown 
+from logica.abrirHugo.abrirHugo import abrirHugo
 from os import system
-system('cls')
+system("cls")
+
 
 def principal():
     
-    baseDatos = connectionBBDD()
-    markdown(baseDatos, "Comida Chatarra")
-    markdown(baseDatos, "Comida Vegana Intergaláctica")
-    markdown(baseDatos, "Comida Baby Yoda")
+    bbddUrl = "mongodb+srv://m001-student:mongo123@cluster0.qmgmx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
+    baseDatos = connectionBBDD(bbddUrl)
+    creadorMarkdown(baseDatos, "ComidaChatarra")
+    creadorMarkdown(baseDatos, "ComidaVeganaIntergalactica")
+    creadorMarkdown(baseDatos, "ComidaBabyYoda")    
+    transferirMarkdown()
+    abrirHugo()
 
 principal()
