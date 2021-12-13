@@ -1,7 +1,9 @@
+from turtle import up
 from pymongo import MongoClient
 import certifi
-
-def updateItem():
+updateDoc = {"titulo":"Pizza Vegana"}
+newInfo ={"descriptionMenu":"comida riquisima"}
+def updateItem(updateDoc, newInfo):
     try:
         cluster = MongoClient('mongodb+srv://m001-student:mongo123@cluster0.qmgmx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', tlsCAFile=certifi.where())
         baseDatos = cluster.proyecto
@@ -10,7 +12,7 @@ def updateItem():
         
         lowRespuesta = respuesta.lower()
         if lowRespuesta == "s":
-            coleccion.update_one({"titulo":"Pizza Vegana"},{"$set":{"descriptionMenu":"comida riquisima"}})
+            coleccion.update_one(updateDoc,{"$set":newInfo}) 
         else:
             raise ValueError
     except:
@@ -20,4 +22,4 @@ def updateItem():
         print("Se actualizó correctamente")
         exit()
 
-updateItem() 
+updateItem(updateDoc,newInfo) 

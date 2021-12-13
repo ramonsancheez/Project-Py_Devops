@@ -8,11 +8,9 @@
    * Análisis de los objetivos   
 2. Demostración del funcionamiento del proyecto
 3. Descripción técnica
-    * Arquitectura de la applicación (de momento¿?)
+    * Arquitectura de la applicación
     * Tecnologías utilizadas 
     * Diagrama de compontes y sus funcionalidades
-    * Diagrama E/R de la base de datos (o el que proceda).??????????¿¿¿¿¿¿¿
-    * Fichero XML y Schema ???¿¿¿¿ (donde saco el XMML)
 4. Metodología de desarrollo utilizada
 5. Clockify del desarrollo de la app (esto lo haré  al final porque seguimos inputando)
    * Diagrama del trabajo hecho
@@ -54,7 +52,7 @@ A continuación ejecutaremos nuestro programa des de el *main.py* para demostrar
 La arquitectura del sistema de nuestra aplicación es modular. Cada módulo es independiente de los demás, de manera que presenta la lógica un bajo acoplamiento. Pero se encuentran todos conectados en el main.py y son ejecutados a la vez. 
 
 Nuestras barricados las encontramos en los módulos dónde hemos utlizado las siguientes librerías: *Pymongo, Os, Shutill, Webbrowser y Certifi.* Ya que por algún error que se presente en ellas impedirá la ejecución de dichos módulos.
-![arquitecturaCapas](./srcReadme/arquitecturaCapas.png)
+![arquitecturaCapas](./srcReadme/arquitecturaCapas.jpeg)
 
 * **Tecnologías utilizadas:**
 
@@ -78,18 +76,18 @@ Para desarrollar el proyecto nosotros hemos hecho uso de las siguientes herramie
 *   **Diagrama de compontes y sus funcionalidades:**
 
 Nuestro diagrama de componentes consta de los siguientes módulos :
+![Diagrama de componentes](./srcReadme/diagramaComponentes.jpeg)
 
 |          Módulo         |                                                                                                                              Proposito                                                                                                                              |
 |:-----------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| Main.py                 | recoge y ejecuta todos los otros módulos, por lo tanto depende de los demás                                                                                                                                                                                         |
-| conexionBasedatos.py    | conecta con la base de datos almacenada en MongoAtlas y depende de este mismo.                                                                                                                                                                                      |
-| listaDiccionario.py     | transforma la colección de los ítems en una lista python para su posterior manipulación. Depende del módulo anterior.                                                                                                                                               |
-| selectorDatos.py        | localiza y classifica los menús por las 3 categorias que existen.                                                                                                                                                                                                   |
-| convertirMarkdown.py    | recoge                                                                                                                                                                                                                                                              |
-| ingredientsArray.py     |                                                                                                                                                                                                                                                                     |
-| stateCaracteristicas.py |                                                                                                                                                                                                                                                                     |
-| conectarHugo.py         | traslada los archivos que se encuentran en la carpeta origen a la ruta destino deseada. En este caso es en el Post>Content>webComida.com, para que el gestor  de sitios estáticos lo publique. Depende de los archivos Markdown convertidos creados por ese módulo. |
-| abrirHugo.py            | se posiciona dentro de la web con Hugo. Luego abre una ventana en el navegador  predeterminado de cada ordenador y ejecuta en la terminal el comando para ver la web.                                                                                               |
+| Main.py                 | Recoge y ejecuta todos los otros módulos, por lo tanto depende de los demás.                                                                                                                                                                                         |
+| conexionBasedatos.py    | Conecta con la base de datos almacenada en MongoAtlas.                                                                                                                                                                                     |
+| selectorDatos.py     | Divide los ítems según su categoria y crea una lista python para su posterior manipulación.                                                                                                                                                                                               |
+| convertirMarkdown.py    | Transforma la lista de 9 diccionarios de la misma categoria en un solo archivo markdown, mediante dos funciones. Utiliza dos funciones más (selectorDatos y escritorMarkdown), con estas obtiene la lista con los 9 diccionarios pertenecientes a la misma categoria y los escribe todos en un mismo archivo MD.                                                                                                                                                                                                                                             |
+| ingredientsArray.py     |   Transforma el array que le pasa el valor de *ingredients* y los transforma en un solo string, para su posterior manipulación para dar estilo cuando se escriban en los MD.                                                                                                                                                                                                                                                           |
+| stateCaracteristicas.py |         Transforma el diccionario que le pasa el valor de *state* y los transforma en un solo string, para su posterior manipulación para dar estilo cuando se escriban en los MD.                                                                                                                                                                                                                                                                |
+| conectarHugo.py         | Traslada los archivos que se encuentran en la carpeta origen a la ruta destino deseada. En este caso es en el Post>Content>webComida.com, para que el gestor  de sitios estáticos lo publique. Depende de los archivos Markdown convertidos creados por ese módulo. |
+| abrirHugo.py            | Se posiciona dentro de la web con Hugo. Luego abre una ventana en el navegador  predeterminado de cada ordenador y ejecuta en la terminal el comando para ver la web.                                                                                               |
                                              
 ---
  ## **4. Metodología de desarrollo utilizada**
@@ -118,7 +116,7 @@ A continuación os mostraremos el
 ---
 ## **5. Clockify del desarrollo de la app**
 * *Diagrama del trabajo hecho:*
-  [Clockify Report del proyecto](https://github.com/ramonsancheez/Project-Py_Devops/blob/Leslie-features2/srcReadme/Clockify_Time_Report_Summary.pdf)
+  [Clockify Report del proyecto](https://github.com/ramonsancheez/Project-Py_Devops/blob/Leslie-features2/srcReadme/Clockify_por_Tags.pdf)
 
 Este es nuestro diagrama de trabajo que hemos hecho con Clockify. Dentro de ese informe podemos ver en primer lugar una diagrama en barras que muestra la horas de trabajo que hemos hecho a lo largo del proyecto.
 
@@ -127,7 +125,9 @@ Este es nuestro diagrama de trabajo que hemos hecho con Clockify. Dentro de ese 
 También existe otro diagrama cirular donde se muestra por distintos colores las tareas que hemos realizado. Y por último se ve de manera más detallada, separado por programador, las tareas realizadas. 
 
 * *Análisis y justificación del tiempo invertido*:
-
+* *Diagrama del tiempo:*
+  [Clockify Time del proyecto](https://github.com/ramonsancheez/Project-Py_Devops/blob/Leslie-features2/srcReadme/Clockify_Time_Report_Summary_18_11_2021-13_12_2021.pdf)
+  
 Analizando el tiempo invertido, principalmente podemos destacar que nos hemos acercado a la estimación inicial. Desde un principio, a través de la experiencia que tuvo nuestro mentor de 2n año, sabíamos que alredor de más de 100h le íbamos a dedicar.
 Por eso, decidimos ser precabidos y empezar a trabajar y organizar los sprints desde el primer momento. 
 

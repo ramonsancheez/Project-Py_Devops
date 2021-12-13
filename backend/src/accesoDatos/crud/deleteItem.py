@@ -1,13 +1,13 @@
 from pymongo import MongoClient
 import certifi
 
-def deleteItem():
+deletedItem = { "name": "John", "address": "Highway 37" }
+def deleteItem(deletedItem):
     try:
         cluster = MongoClient('mongodb+srv://m001-student:mongo123@cluster0.qmgmx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', tlsCAFile=certifi.where())
         baseDatos = cluster.proyecto
         coleccion = baseDatos.menus_with_schema
 
-        deletedItem = { "titulo": "Pizza Vegana", "descriptionMenu": "Un poquito de Italia a todo el universo", "stock": 70, "price":40.99, "ingredients":["Masa de Milán", "Tomate de Ourense", "Queso de no oveja"], "category":"ComidaVeganaIntergalactica"}
         respuesta = input(f"Va a eliminar {deletedItem} de la base de datos, si desea cambiar los datos, hágalo en el editor de texto. ¿Desea eliminar ese ítem? (S/N): ")
         respuesta.lower()
         if respuesta == "s":
@@ -25,4 +25,4 @@ def deleteItem():
     # coleccion.remove() Elimina todos los ítems
     # coleccion.delete_one(deletedItem) Elimina ese item
 
-deleteItem()
+deleteItem(deletedItem)
