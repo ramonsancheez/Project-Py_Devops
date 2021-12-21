@@ -211,18 +211,25 @@ Hemos realizado diversos cambios en la estructura del CSS/HTML:
  * ### *CRUD*
   
   Todas nuestras operacionese (*Insert, update, delete*) las hacemos desde los scripts de python que estan vinculados con la base de datos. Para demostrar su funcionamiento, a continuación insertaré 3 vídeos cortos con ítems de ejemplo. 
+  ***Aviso:*** **como los videos de los ejemplos pesan mucho, insertaremos sus enlaces en youtube para visualizarlos** 
+
 
 ##### 1r Ejemplo: insertar
   En el primer ejemplo, insertaré un nuevo documento, llamado *John*, a la coleción de *menus_with_schema* siguiendo el esquema establecido. El documento a insertar lo escribimos en el apartado correspondiente del script y una vez hecho, ejecutamos el programa. En la terminal no nos saldrá ningún error puesto que hemos seguido el esquema, más bien aparece un mensaje de éxito para indicar a la usuaria que la operación se ha completado bien. Para  comprobarlo buscaremos el nuevo documeto insertado en la base de datos. 
 
-  Y a continuación, experimentamos insertar un documento que no sigue el esquema para que nos de error 
+  Y a continuación, experimentamos insertar un documento que no sigue el esquema para que nos de error.
+  
+  https://youtu.be/ar55MSpDwxI
 
   ##### 2n Ejemplo: actualizar
 
   En este caso vamos a cambiar la descripción del documento *John*, por *Comida riquíssima*, mediante el script de *updateItem.py*
+  
+  https://youtu.be/Z_g_9zGI8js
+  
   ##### 3r Ejemplo: eliminar
 Aquí vamos a proceder a eliminar el documento *John* sobre el cual hemos estado haciendo nuestras pruebas, utilizando en este caso el script de *deleteItem.py*
-
+https://youtu.be/SgA-ZZcUfPI
 ---
  ## **6. Metodología de desarrollo utilizada**
 La metodología de desarrollo que hemos seleccionado conjuntamente es la SCRUM. Porque nos desenvolvemos bien dentro de este marco de proceso ligero y ágil. 
