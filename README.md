@@ -228,8 +228,8 @@ Hemos realizado diversos cambios en la estructura del CSS/HTML:
   https://youtu.be/Z_g_9zGI8js
   
   ##### 3r Ejemplo: eliminar
-Aquí vamos a proceder a eliminar el documento *John* sobre el cual hemos estado haciendo nuestras pruebas, utilizando en este caso el script de *deleteItem.py*
-https://youtu.be/SgA-ZZcUfPI
+  Aquí vamos a proceder a eliminar el documento *John* sobre el cual hemos estado haciendo nuestras pruebas, utilizando en este caso el script de *deleteItem.py*
+  https://youtu.be/SgA-ZZcUfPI
 ---
  ## **6. Metodología de desarrollo utilizada**
 La metodología de desarrollo que hemos seleccionado conjuntamente es la SCRUM. Porque nos desenvolvemos bien dentro de este marco de proceso ligero y ágil. 
